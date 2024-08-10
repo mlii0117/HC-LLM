@@ -31,9 +31,9 @@ def train(args):
     )
 
     if args.ckpt_file is not None:
-        model = R2GenGPT.load_from_checkpoint(args.ckpt_file, strict=False)
+        model = HC_LLM.load_from_checkpoint(args.ckpt_file, strict=False)
     else:
-        model = R2GenGPT(args)
+        model = HC_LLM(args)
 
     if args.test:
         trainer.test(model, datamodule=dm)
