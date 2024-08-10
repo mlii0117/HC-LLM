@@ -1,7 +1,7 @@
-# R2GenGPT: Radiology Report Generation with Frozen LLMs
+# HC-LLM: Historical-Constrained Large Language Models for Radiology Report Generation
 
 ## Introduction
-![overview](https://github.com/wang-zhanyu/R2GenGPT/blob/main/images/align.png)
+![overview](https://github.com/TengfeiLiu966/HC-LLM/edit/main/images/align.png)
 
 ## Getting Started
 ### Installation
