@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dataset="mimic_cxr"
-annotation="/HUyongli/fly/code/Longitudinal-Chest-X-Ray-main/"
-base_dir="/HUyongli/fly/code/data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
+annotation="./data/"
+base_dir="./data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
 
 version="v1_delta"
 savepath="./save/$dataset/$version"
@@ -14,12 +14,12 @@ else
   echo "Folder '$savepath' already exists."
 fi
 
-CUDA_VISIBLE_DEVICES=3 python -u train.py \
+CUDA_VISIBLE_DEVICES=0 python -u train.py \
     --dataset ${dataset} \
     --annotation ${annotation} \
     --base_dir ${base_dir} \
-    --batch_size 12 \
-    --val_batch_size 16 \
+    --batch_size 4 \
+    --val_batch_size 4 \
     --freeze_vm True \
     --vis_use_lora True \
     --vis_r 16 \
