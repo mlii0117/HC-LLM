@@ -1,14 +1,14 @@
 #!/bin/bash
 
 dataset="mimic_cxr"
-annotation="/HUyongli/fly/code/Longitudinal-Chest-X-Ray-main/"
-base_dir="/HUyongli/fly/code/data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
-delta_file="/HUyongli/fly/code/R2GenGPT2/save/mimic_cxr/v1_shallow/checkpoints/checkpoint_epoch2_step23090_bleu0.089403_cider0.100559.pth"
+annotation="./data/"
+base_dir="./data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
+delta_file=""
 
 version="v1_delta"
 savepath="./save/$dataset/$version"
 
-CUDA_VISIBLE_DEVICES=3 python -u train.py \
+CUDA_VISIBLE_DEVICES=0 python -u train.py \
     --test \
     --dataset ${dataset} \
     --annotation ${annotation} \
