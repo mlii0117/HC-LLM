@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dataset="mimic_cxr"
-annotation=/home/ltf/code/Longitudinal-Chest-X-Ray-main/
-base_dir="/home/ltf/code/data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
+annotation=./data/
+base_dir="./data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
 
 version="v1_shallow"
 savepath="./save/$dataset/$version"
