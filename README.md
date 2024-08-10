@@ -11,7 +11,6 @@ Radiology report generation (RRG) models are designed to describe individual exa
 Git clone our repository and install the requirements.
 
 ```bash
-https://github.com/TengfeiLiu966/HC-LLM.git
 cd HC-LLM
 pip install -r requirements.txt
 ```
