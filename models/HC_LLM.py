@@ -22,7 +22,7 @@ from einops import rearrange, repeat
 
 #(Optional)
 class QFormer(nn.Module):
-    def __init__(self, hidden_dim, query_dim, bert_model_name='/home/ltf/code/data/bert-base-uncased/',
+    def __init__(self, hidden_dim, query_dim, bert_model_name='./bert-base-uncased/',
                  is_lock=True):
         super(QFormer, self).__init__()
         self.image_projection = nn.Linear(hidden_dim, 768)
