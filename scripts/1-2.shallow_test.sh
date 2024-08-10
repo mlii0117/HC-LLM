@@ -1,9 +1,9 @@
 #!/bin/bash
 
 dataset="mimic_cxr"
-annotation=/home/ltf/code/Longitudinal-Chest-X-Ray-main/
-base_dir="/home/ltf/code/data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
-delta_file="/home/ltf/code/R2GenGPT-HRRG6/save/mimic_cxr/v1_shallow/checkpoints/checkpoint_epoch0_step11546_bleu0.098568_cider0.265444.pth"
+annotation=./data/
+base_dir="./data/ALMM/physionet.org/files/mimic-cxr-jpg/2.0.0/files/"
+delta_file=""
 
 version="v1_shallow"
 savepath="./save/$dataset/$version"
