@@ -1,4 +1,4 @@
-# HC-LLM: Historical-Constrained Large Language Models for Radiology Report Generation
+# HC-LLM: Historical-Constrained Large Language Models for Radiology Report Generation (AAAI 2025)
 
 ## Introduction
 Radiology report generation (RRG) models are designed to describe individual examinations, but often neglect the integration of historical information from either visual or textual modality. However, incorporating longitudinal data is crucial for the clinical application of medical reports, particularly for patient follow-ups and reviews. Existing methods often struggle with long sequence dependencies when integrating historical information, whereas large language models (LLMs) possess strong in-context learning capabilities, making them promising for analyzing longitudinal medical data. In light of this, we introduce a novel Historical-Constrained Large Language Models (HC-LLM) framework for RRG, which empowers LLMs with longitudinal report generation capabilities by constraining the consistency and differences between longitudinal images and their corresponding reports. 
@@ -44,3 +44,15 @@ bash scripts/1-2.shallow_test.sh
 
 ## License
 This repository is under [BSD 3-Clause License](LICENSE.md).
+
+## Citation
+If you find this code is useful, please cite us.
+
+```bash
+@article{liu2024hc,
+  title={HC-LLM: Historical-Constrained Large Language Models for Radiology Report Generation},
+  author={Liu, Tengfei and Wang, Jiapu and Hu, Yongli and Li, Mingjie and Yi, Junfei and Chang, Xiaojun and Gao, Junbin and Yin, Baocai},
+  journal={arXiv preprint arXiv:2412.11070},
+  year={2024}
+}
+```
